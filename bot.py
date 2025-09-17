@@ -51,7 +51,7 @@ async def handler(event):
         #  "thread_id": thread_id,
          "target_chat_id": GROUP_B,
         # "target_thread_id": TOPIC_MAP[thread_id],
-         "send_at": datetime.utcnow() + timedelta(seconds=20),#  datetime.utcnow() + timedelta(seconds=20) datetime.utcnow() + timedelta(days=DELAY_DAYS)
+         "send_at": datetime.utcnow() + timedelta(days=DELAY_DAYS),#  datetime.utcnow() + timedelta(seconds=20) datetime.utcnow() + timedelta(days=DELAY_DAYS)
          "done": False,
      }
     await messages.insert_one(doc)
